@@ -1,0 +1,311 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\TM.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TM.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 237, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Test Mate..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Test Mate® Evaluation Version 2.0",IDC_STATIC,40,15,119,8,SS_NOPREFIX
+    CONTROL         "Copyright © 2005-2008 Robert Garcia.  All rights reserved.",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,40,30,191,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_TM_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Mate Evaluation Version 2.0"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | BS_FLAT | NOT WS_VISIBLE | WS_DISABLED | WS_GROUP | WS_TABSTOP,120,25,190,35,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | BS_FLAT | NOT WS_VISIBLE | WS_DISABLED,120,62,190,35,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | BS_FLAT | NOT WS_VISIBLE | WS_DISABLED,120,99,190,35,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | BS_FLAT | NOT WS_VISIBLE | WS_DISABLED,120,136,190,35,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Next >",IDC_NEXTBUTTON,265,180,45,15,BS_CENTER | BS_VCENTER | WS_DISABLED
+    PUSHBUTTON      "Show Score",IDC_SHOW_SCORE,137,180,45,15,BS_CENTER | BS_VCENTER | WS_DISABLED
+    GROUPBOX        "Question",IDC_STATIC1,5,15,105,160,0,WS_EX_TRANSPARENT
+    LTEXT           "Time",IDC_STATIC_CLOCK,10,5,45,10,SS_CENTERIMAGE | NOT WS_VISIBLE,WS_EX_TRANSPARENT
+    RTEXT           "Question",IDC_STATIC_QUESTIONCOUNTER,265,5,45,10,SS_CENTERIMAGE | NOT WS_VISIBLE,WS_EX_TRANSPARENT
+    CTEXT           "Title",IDC_STATIC_TESTTITLE,60,5,200,10,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    LTEXT           "",IDC_STATIC_QUESTIONBOX,10,25,95,145,0,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC2,115,15,200,160,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "< Review",IDC_REVIEWBUTTON,10,180,45,15,BS_CENTER | BS_VCENTER | WS_DISABLED
+END
+
+IDD_LOGIN_DLG DIALOGEX 0, 0, 180, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Welcome to..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_USERNAME,73,130,90,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,73,154,90,12,ES_PASSWORD | ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,7,178,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,123,178,50,14
+    LTEXT           "User Name:",IDC_STATIC_USERNAME,18,130,38,12,SS_CENTERIMAGE
+    LTEXT           "Password:",IDC_STATIC_PASSWORD,18,154,34,12,SS_CENTERIMAGE | WS_DISABLED
+    CONTROL         131,IDC_STATICTITLE,"Static",SS_BITMAP | SS_CENTERIMAGE,27,5,124,117,WS_EX_TRANSPARENT
+END
+
+IDD_IMAGEDIALOG DIALOGEX 0, 0, 180, 165
+STYLE DS_ABSALIGN | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Test Mate"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC_IMAGE,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE,5,5,170,155
+END
+
+IDD_TERMS DIALOGEX 0, 0, 186, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Test Mate"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Show the Terms as Answers",IDC_TERMS,10,74,165,14,BS_CENTER | BS_VCENTER | BS_MULTILINE
+    PUSHBUTTON      "Show the Definitions as Answers",IDC_DEFINITIONS,10,53,165,14,BS_CENTER | BS_VCENTER | BS_MULTILINE
+    PUSHBUTTON      "Random 50/50 Split",IDC_RANDOMCHOICE,10,32,165,14,BS_CENTER | BS_VCENTER | BS_MULTILINE
+    CTEXT           "This test contains key terms.\nHow would you like these terms displayed?",IDC_STATIC,10,5,165,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x3L
+#else
+ FILEFLAGS 0x2L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Shore Network Solutions"
+            VALUE "FileDescription", "Test Mate® Interpreter"
+            VALUE "FileVersion", "2.0"
+            VALUE "LegalCopyright", "Copyright © 2005-2008 Robert Garcia.  All rights reserved."
+            VALUE "ProductName", "Test Mate® Evaluation Version"
+            VALUE "ProductVersion", "2.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_LOGIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_IMAGEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_TERMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TMLOGO              BITMAP                  "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "&Main"
+    BEGIN
+        MENUITEM "Start a &New Test...",        ID_FILE_STARTNEWTEST
+        MENUITEM "&Save the Current Test...",   ID_MAIN_SAVECURRENTTEST32799
+        MENUITEM "Load a Previous Test...",     ID_MAIN_LOADAPREVIOUSTEST
+        POPUP "&Options..."
+        BEGIN
+            MENUITEM "Keep Test Mate On &Top",      ID_OPTIONS_ALWAYSONTOP
+            MENUITEM "Provide &Feedback After Answering", ID_OPTIONS_PROVIDEFEEDBACK, CHECKED
+            MENUITEM "&Randomize the Question Order", ID_OPTIONS_RANDOMIZEQUESTIONORDER
+            MENUITEM "Show the &Clock",             ID_OPTIONS_SHOWCLOCK, CHECKED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit Test Mate",             ID_FILE_EXITTESTMATE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics...",             ID_HELP
+        MENUITEM "For Service Members...",      ID_HELP_ALETTERTOALLSERVICEMEMBERS
+        MENUITEM SEPARATOR
+        MENUITEM "&About Test Mate...",         ID_HELP_ABOUTTESTMATE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_USERGUIDE      HTML                    "\\tm\\Test Mate User Guide.mht"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Test Mate..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\TM.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

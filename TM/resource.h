@@ -1,0 +1,67 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by TM.rc
+//
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_TM_DIALOG                   102
+#define IDR_MAINFRAME                   128
+#define IDD_LOGIN_DLG                   129
+#define IDB_TMLOGO                      131
+#define IDR_MENU1                       132
+#define IDD_IMAGEDIALOG                 135
+#define IDR_ACCELERATOR1                136
+#define IDD_TERMS                       137
+#define IDR_HTML1                       158
+#define IDR_HTML_USERGUIDE              158
+#define ID_CLK_TIMER                    201
+#define IDC_USERNAME                    1000
+#define IDC_PASSWORD                    1001
+#define IDC_RADIO1                      1002
+#define IDC_RADIO2                      1003
+#define IDC_RADIO3                      1004
+#define IDC_RADIO4                      1005
+#define IDC_NEXTBUTTON                  1006
+#define IDC_STATIC_CLOCK                1007
+#define IDC_STATIC_TESTTITLE            1008
+#define IDC_STATIC_QUESTIONCOUNTER      1009
+#define IDC_STATIC_QUESTIONBOX          1011
+#define IDC_REVIEWBUTTON                1012
+#define IDC_SHOW_SCORE                  1018
+#define IDC_STATICTITLE                 1019
+#define IDC_STATIC_IMAGE                1020
+#define IDC_STATIC2                     1021
+#define IDC_STATIC1                     1022
+#define IDC_TERMS                       1023
+#define IDC_DEFINITIONS                 1024
+#define IDC_RANDOMCHOICE                1025
+#define IDC_STATIC_PASSWORD             1029
+#define IDC_STATIC_USERNAME             1030
+#define IDC_BUTTON1                     1031
+#define IDC_RICHEDIT21                  1033
+#define ID_FILE_STARTNEWTEST            32771
+#define ID_OPTIONS_ALWAYSONTOP          32773
+#define ID_OPTIONS_PROVIDEFEEDBACK      32774
+#define ID_OPTIONS_RANDOMIZEQUESTIONORDER 32775
+#define ID_OPTIONS_SHOWCLOCK            32776
+#define ID_FILE_EXITTESTMATE            32780
+#define ID_HELP_ABOUTTESTMATE           32783
+#define ID_OPTIONS_TERMS                32793
+#define ID_TERMS_CHOOSETERM             32794
+#define ID_TERMS_CHOOSEDEFINITION       32795
+#define ID_TERMS_RANDOMCHOICE           32796
+#define ID_MAIN_SAVECURRENTTEST32799    32799
+#define ID_MAIN_LOADAPREVIOUSTEST       32800
+#define ID_HELP_ALETTERTOALLSERVICEMEMBERS 32801
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        159
+#define _APS_NEXT_COMMAND_VALUE         32802
+#define _APS_NEXT_CONTROL_VALUE         1034
+#define _APS_NEXT_SYMED_VALUE           102
+#endif
+#endif
